@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var phrase = require('./phrase');
 
-app.use(express.static(__dirname + '/public'));
-console.log(__dirname + '/public');
+app.use(express.static(__dirname));
+console.log(__dirname);
 
 app.get('/phrase', function(req, res) {
   res.send(phrase.outlanderPhrase[Math.floor(Math.random() * phrase.outlanderPhrase.length)]);
