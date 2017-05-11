@@ -9,7 +9,7 @@ app.get('/phrase', function(req, res) {
   res.send(phrase.outlanderPhrase[Math.floor(Math.random() * phrase.outlanderPhrase.length)]);
 });
 
-var server = app.listen(3000, function() {
-  var port = server.address().port;
-  console.log('Listening at http://localhost:%s', port);
-});
+// var server = app.listen(3000, function() {
+//   var port = server.address().port;
+//   console.log('Listening at http://localhost:%s', port);
+// });
